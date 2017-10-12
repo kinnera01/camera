@@ -67,20 +67,6 @@ button#capture{
           });
       } else {
           console.log("i'm out!");
-          //  	 $("video").show();
-          // function filePreview(input) {
-          //     if (input.files && input.files[0]) {
-          //         var reader = new FileReader();
-          //         reader.onload = function (e) {
-          //             $('#uploadForm + img').remove();
-          //             $('#uploadForm').after('<img src="' + e.target.result + '"/>');
-          //         }
-          //         reader.readAsDataURL(input.files[0]);
-          //     }
-          // }
-          // $("#file").change(function () {
-          //     filePreview(this);
-          // });
 
       }
   </script>
@@ -89,14 +75,14 @@ button#capture{
     const fileInput = document.getElementById('file-input');
     // const target = document.getElementById('target');
     const supported = 'mediaDevices' in navigator;
-    const player = document.getElementById('player');
-    const canvas = document.getElementById('canvas');
-    const context = canvas.getContext('2d');
+    // const player = document.getElementById('player');
+    // const canvas = document.getElementById('canvas');
+    // const context = canvas.getContext('2d');
     // const captureButton = document.getElementById('capture');
     // const cameraButton = document.getElementById('camera');
-    const constraints = {
-      video: true,
-    };
+    // const constraints = {
+    //   video: true,
+    // };
     // captureButton.addEventListener('click', () => {
     //   // Draw the video frame to the canvas.
     //   context.drawImage(player, 0, 0, canvas.width, canvas.height);
