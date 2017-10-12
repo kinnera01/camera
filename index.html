@@ -23,27 +23,25 @@ img{
   height:300px;
   border: 2px solid grey;
 }
-video#player{
-  margin: 30px;
-  background-color: lightslategray;
+#uploadForm> input
+{
+    display: none;
 }
-#image{
-  display: in-line;
-}
-.btn{
-  margin-bottom: 20px;
-}
-button#capture{
-  margin-left: -300px;
+
+#uploadForm img
+{
+    width: 80px;
+    cursor: pointer;
 }
 </style> 
-  <div id="uploadForm">
-    <input id="file" type="file" accept="image/*;capture=camera">
-    </div>
+    <div id="uploadForm">
+      <label for="file-input" class="btn btn btn-lg">
+        <span class="glyphicon glyphicon-camera"></span>
+      </label>
+  
+      <input id="file-input" type="file"accept="image/*;capture=camera"/>
+  </div>
   <div class="image">
-  <!-- <video id="player" width=320 height=240 controls autoplay></video>
-  <button type="button" class="btn btn-default btn-sm" id="capture"><span class="glyphicon glyphicon-hd-video"></span> Capture</button>
-  <button type="button" class="btn btn-default btn-sm" id="camera"><span class="glyphicon glyphicon-camera"></span> Camera</button> -->
   </div>
   <canvas id="canvas" width=320 height=240></canvas>
   <script type='text/javascript' src="https://wurfl.io/wurfl.js"></script>
@@ -67,6 +65,7 @@ button#capture{
           });
       } else {
           console.log("i'm out!");
+          $("#uploadForm").hide();
 
       }
   </script>
